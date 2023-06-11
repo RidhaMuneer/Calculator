@@ -1,16 +1,19 @@
-.resultBox{
+body {
+    font-family: 'Poppins', sans-serif;
+  }  
+
+  .resultBox {
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 10px;
     border: 1px black solid;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 200px;
-}
+    height: 75px;
+    width: 313px;
+    padding-left: 10px;
+  }  
 
 .calBody{
-    margin-top: 8%;
+    margin-top: 12%;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -26,9 +29,12 @@
   }
   
 button {
-    width: 45px;
-    height: 45px;
+    width: 75px;
+    height: 75px;
     font-size: 18px;
+    border-radius: 10px;
+    border: 1px black solid;
+    margin: 1px;
 }
 
 .buttonContainer {
@@ -36,4 +42,21 @@ button {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     justify-items: center;
-} 
+}
+
+.clear, .equal{ 
+    background-color: tomato;
+}
+
+.add, .subtract, .multi, .divide{
+    background-color: rgba(255, 148, 71, 0.733);
+}
+
+.styled-link {
+    text-decoration: none;
+    color: black;
+    position: fixed;
+    bottom: 10px; /* Adjust the value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}  
