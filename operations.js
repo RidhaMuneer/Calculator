@@ -60,7 +60,10 @@ equalButton.addEventListener("click", function(){
 
 const clearButton = document.querySelector(".clear");
 clearButton.addEventListener("click", function(){
-    console.log("clear");
+    let spanElement = document.getElementById('myLabel');
+    spanElement.textContent = "";
+    num1 = "";
+    num2 = "";
 });
 
 //adding singlar numbers works fine, but it comes combining numbers, it is not working
