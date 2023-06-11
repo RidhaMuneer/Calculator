@@ -64,6 +64,7 @@ clearButton.addEventListener("click", function(){
     spanElement.textContent = "";
     num1 = "";
     num2 = "";
+    operation = 0;
 });
 
 //adding singlar numbers works fine, but it comes combining numbers, it is not working
