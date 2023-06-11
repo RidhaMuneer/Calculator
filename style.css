@@ -3,7 +3,7 @@ body {
     color: #782323;
 }  
 
-  .resultBox {
+.resultBox {
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -11,7 +11,7 @@ body {
     height: 75px;
     width: 313px;
     padding-left: 10px;
-  }  
+}  
 
 .calBody{
     margin-top: 12%;
@@ -57,7 +57,7 @@ button {
     text-decoration: none;
     color: black;
     position: fixed;
-    bottom: 10px; /* Adjust the value as needed */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-}  
+}
