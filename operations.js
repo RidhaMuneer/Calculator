@@ -18,6 +18,7 @@ var num1;
 var num2;
 var operation;
 var result;
+var counter = 0;
 
 const addButton = document.querySelector(".add");
 addButton.addEventListener("click", function(){
@@ -71,138 +72,280 @@ clearButton.addEventListener("click", function(){
 //as it should be.
 const oneButton = document.querySelector(".one");
 oneButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "1";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "1";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "1";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
         return;
-    }else if(num2 == null){
-        num2 = "1";
-        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "1";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "1";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }
+        counter++;
     }
-    num1 = num1 + "1";
-    num2 = num2 + "1";
 });
 
 const twoButton = document.querySelector(".two");
 twoButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "2";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "2";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "2";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
         return;
-    }else if(num2 == null){
-        num2 = "2"
-        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "2";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "2";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }
+        counter++;
     }
-    num1 = num1 + "2";
-    num2 = num2 + "2";
 });
 
 const threeButton = document.querySelector(".three");
 threeButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "3";
-    }else{
-        num1 = num1 + "3";
-    }
-    if(num2 == null){
-        num2 = "3";
-    }else{
-        num2 = num2 + "3";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "3";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "3";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
+        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "3";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "3";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }
+        counter++;
     }
 });
 
 const fourButton = document.querySelector(".four");
 fourButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "4";
-    }else{
-        num1 = num1 + "4";
-    }
-    if(num2 == null){
-        num2 = "4";
-    }else{
-        num2 = num2 + "4";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "4";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "4";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
+        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "4";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "4";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }
+        counter++;
     }
 });
 
 const fiveButton = document.querySelector(".five");
 fiveButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "5";
-    }else{
-        num1 = num1 + "5";
-    }
-    if(num2 == null){
-        num2 = "5";
-    }else{
-        num2 = num2 + "5";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "5";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "5";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
+        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "5";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "5";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
     }
 });
 
 const sixButton = document.querySelector(".six");
 sixButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "6";
-    }else{
-        num1 = num1 + "6";
-    }
-    if(num2 == null){
-        num2 = "6";
-    }else{
-        num2 = num2 + "6";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "6";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "6";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
+        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "6";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "6";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }
+        counter++;
     }
 });
 
 const sevenButton = document.querySelector(".seven");
 sevenButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "7";
-    }else{
-        num1 = num1 + "7";
-    }
-    if(num2 == null){
-        num2 = "7";
-    }else{
-        num2 = num2 + "7";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "7";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "7";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
+        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "7";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "7";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }
+        counter++;
     }
 });
 
 const eightButton = document.querySelector(".eight");
 eightButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "8";
-    }else{
-        num1 = num1 + "8";
-    }
-    if(num2 == null){
-        num2 = "8";
-    }else{
-        num2 = num2 + "8";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "8";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "8";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
+        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "8";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "8";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }
+        counter++;
     }
 });
 
 const nineButton = document.querySelector(".nine");
 nineButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "9";
-    }else{
-        num1 = num1 + "9";
-    }
-    if(num2 == null){
-        num2 = "9";
-    }else{
-        num2 = num2 + "9";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "9";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "9";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
+        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "9";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "9";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }
+        counter++;
     }
 });
 
 const zeroButton = document.querySelector(".zero");
 zeroButton.addEventListener("click", function(){
-    if(num1 == null){
-        num1 = "0";
-    }else{
-        num1 = num1 + "0";
-    }
-    if(num2 == null){
-        num2 = "0";
-    }else{
-        num2 = num2 + "0";
+    if(counter % 2 == 0){
+        if(num1 == null){
+            num1 = "0";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }else{
+            num1 = num1 + "0";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num1;
+        }
+        counter++;
+        return;
+    }else if(counter % 2 == 1){
+        if(num2 == null){
+            num2 = "0";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }else{
+            num2 = num2 + "0";
+            let spanElement = document.getElementById('myLabel');
+            spanElement.textContent = num2;
+        }
+        counter++;
     }
 });
